@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siren Music</title>
+    <link rel="icon" href="/media/opera_9311829.png">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="bg-teal-50">
+    <nav class="bg-teal-200 px-4 md:px-1">
+        <div class="flex flex-wrap container mx-auto justify-between items-center">
+            <div class="flex items-center text-gray-700 py-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12">
+                    <path fill-rule="evenodd" d="M19.952 1.651a.75.75 0 0 1 .298.599V16.303a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.403-4.909l2.311-.66a1.5 1.5 0 0 0 1.088-1.442V6.994l-9 2.572v9.737a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.402-4.909l2.31-.66a1.5 1.5 0 0 0 1.088-1.442V5.25a.75.75 0 0 1 .544-.721l10.5-3a.75.75 0 0 1 .658.122Z" clip-rule="evenodd" />
+                  </svg>
+                <h1 class="text-2xl lg:text-4xl font-bold ml-2 ">Siren Music</h1>
+            </div>
+            <button class="md:hidden hover:scale-105 text-teal-800 hover:text-gray-800" id="nav-toggle">
+                <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+            <div class="w-full md:w-auto md:items-center py-6 md:py-0 hidden md:flex" id="nav-content">
+                <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 mb-6 md:mb-0">
+                    <a href="#" class="font-semibold ml-5 md:ml-9">About us</a>
+                    <a href="#" class=" ml-5 md:ml-9">Artist</a>
+                    <a href="#" class=" ml-5 md:ml-9">Album</a>
+                </div>
+                <a href="#" class="md:ml-9 bg-gradient-to-r opacity-[.8] font-bold from-teal-700 to-cyan-500 text-white p-4 px-8 rounded-full hover:underline duration-300 hover:scale-105 inline-block ease-in-out">LOG IN</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="bg-gradient-to-r  from-teal-700 to-cyan-500">
+            <div class="container mx-auto flex flex-col md:flex-row items-center py-24 px-8 ">
+                <div class="flex-1 text-white flex flex-col items-center md:items-start text-center md:text-left mb-20 md:mb-0 md:pr-8">
+                    <span>what is your plan?</span>
+                    <h2 class="text-5xl font-semibold my-6 lg:pr-20 ">Make your plan with <b>music...</b></h2>
+                    <p class="text-2xl">Listen to your favorite music anytime and anywhere by purchasing a subscription</p>
+                    <button class="mt-10 bg-white text-gray-800 font-bold shadow-md p-4 px-8 rounded-full hover:underline duration-300 hover:scale-105 inline-block ease-in-out">Buy</button>
+                </div>
+                <div class="flex-1">
+                    <img  class=" md:ml-36 h-80" src="/media/opera_9311829.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        /*Toggle dropdown list*/
+        /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+  
+        var navMenuDiv = document.getElementById("nav-content");
+        var navMenu = document.getElementById("nav-toggle");
+    
+        navMenu.addEventListener('click' , function(e) {
+          if (navMenuDiv.classList.contains("hidden")) {
+            navMenuDiv.classList.remove("hidden");
+          } else {
+            navMenuDiv.classList.add("hidden");
+          }
+        });
+      </script>
+</body>
+</html>
